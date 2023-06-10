@@ -479,6 +479,7 @@ nav{
     top: 0;
     left: 0;
     z-index: 100;
+    padding: 0;
 
 
 }
@@ -704,7 +705,7 @@ nav .access i{
     width:300px;
     height: 50px;
     background: rgba(255, 255, 255, 0.95);
-    box-shadow: 1px 1px 50px rgba(107, 76, 230, 0.308);
+    box-shadow: 1px 1px 40px rgba(107, 76, 230, 0.164);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -767,7 +768,7 @@ nav .access i{
 }
 
 .hero__section .image__con img{
-    width: 350px;
+    width: 310px;
     margin-left: 0px;
 }
 
@@ -808,7 +809,7 @@ footer .about h1{
     margin-left: 0px;
 }
 footer .about p{
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 0;
 }
 
@@ -844,7 +845,7 @@ footer .sitemap ul{
 footer .sitemap ul li{
     color: var(--color-primary);
     margin-left: 0px;
-    font-size: 12px;
+    font-size: 14px;
 }
 footer .sitemap ul li:hover{
     color: var(--color-primary);
