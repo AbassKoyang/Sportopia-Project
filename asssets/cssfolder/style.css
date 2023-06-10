@@ -463,7 +463,23 @@ footer .sitemap__socials i:hover{
 
 
 @media screen and (min-width:320px) and (max-width:599px){
+    body{
+        font-family: 'Work Sans';
+        color: var(--color-dark);
+        background: var(--color-white);
+        overflow-x: visible;
+    }
     
+    
+    /* GENERAL STYLES */ /* GENERAL STYLES */
+    /* GENERAL STYLES */ /* GENERAL STYLES */
+    
+    
+    .container{
+        width: 100%;
+        margin: 0 0;
+        background-color: pink;
+    }
 /********************** NAVBAR **********************/
 
 nav{
@@ -480,6 +496,7 @@ nav{
     left: 0;
     z-index: 100;
     padding: 0;
+    margin: 0;
 
 
 }
@@ -487,7 +504,7 @@ nav .logo{
     font-family: 'Work Sans';
     font-weight: 700;
     font-size: 2rem;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 nav .nav__list{
@@ -542,7 +559,7 @@ nav .nav__list .active{
 }
 
 nav .access{
-    margin-right: 20px;
+    margin-right: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -579,7 +596,7 @@ nav .access .sign__in{
 nav .access i{
     font-size: 35px;
     color: black;
-    display: none;
+    display: block;
     cursor: pointer;
 }
 
@@ -758,7 +775,7 @@ nav .access i{
 /********************** IMAGE **********************/
 
 .hero__section .image__con{
-    width: 100%;
+    width: 95%;
     height: 50%;
     background-color: white;
     display: flex;
@@ -781,20 +798,22 @@ nav .access i{
 
 footer{
     width: 100%;
-    height: 700px;
+    height: 620px;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-    margin-top: 30px;
+    padding: 0;
+    margin: 0;
+    margin-top: 60px;
 }
 
 
 footer .about{
-    width: 80%;
+    width: 85%;
     height: 25%;
-    background-color: transparent;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -814,7 +833,7 @@ footer .about p{
 }
 
 footer .sitemap{
-    width: 100%;
+    width: 75%;
     height: 25%;
     background-color: transparent;
     display: flex;
