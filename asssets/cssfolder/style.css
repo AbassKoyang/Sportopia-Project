@@ -579,7 +579,7 @@ nav .access .sign__in{
 nav .access i{
     font-size: 35px;
     color: black;
-    display: block;
+    display: none;
     cursor: pointer;
 }
 
