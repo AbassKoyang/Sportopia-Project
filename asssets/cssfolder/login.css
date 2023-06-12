@@ -246,7 +246,6 @@ form .additional__buttons__con a .additional__button{
 form .additional__buttons__con a .additional__button:hover{
     background-color: rgba(128, 128, 128, 0.233);
 }
-
 form .additional__buttons__con a .facebook{
     height: 50px;
     background-color:#1d51b9;
@@ -316,5 +315,357 @@ form .additional__buttons__con a .additional__button .bxl-github{
     font-weight: 600;
     margin: 0;
     color: white;
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:450px){
+
+    nav{
+        width: 100%;
+        height: 10vh;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    
+    }
+    nav .logo{
+        font-family: 'Work Sans';
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-left: 20px;
+    }
+    
+    
+    nav .access{
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav .access select{
+        width: 50px;
+        background-color: transparent;
+        margin: 0;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    nav .access select option{
+        width: 100px;
+        color: black;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    
+    nav .access a i{
+        font-size: 35px;
+        margin: 0;
+        color: var(--color-gray);
+    }
+
+    .main__con{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 80px;
+        background-color: white;
+    }
+    .form__container{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border: none;
+    }
+
+    .form__container form{
+        width: 80%;
+        height: 80%;
+        background-color: white;
+    }
+
+
+    form .additional__buttons__con a .additional__button{
+        width: 100%;
+        height: 45px;
+        margin-bottom: 10px;
+        border-radius: 50px;
+        border: 1px solid rgba(128, 128, 128, 0.534);
+        background-color: transparent;
+        font-size: 14px;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form .additional__buttons__con a .facebook{
+        height: 50px;
+        background-color:#1d51b9;
+        border: none;
+        color: white;
+    }
+
+    .main__con .credits{
+        font-size: 11px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+}
+@media screen and (min-width:451px) and (max-width:650px){
+
+    nav{
+        width: 100%;
+        height: 10vh;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    
+    }
+    nav .logo{
+        font-family: 'Work Sans';
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-left: 20px;
+    }
+    
+    
+    nav .access{
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav .access select{
+        width: 50px;
+        background-color: transparent;
+        margin: 0;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    nav .access select option{
+        width: 100px;
+        color: black;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    
+    nav .access a i{
+        font-size: 35px;
+        margin: 0;
+        color: var(--color-gray);
+    }
+
+    .main__con{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 80px;
+        background-color: white;
+    }
+    .form__container{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border: none;
+    }
+
+    .form__container form{
+        width: 80%;
+        height: 80%;
+        background-color: white;
+    }
+
+
+    form .additional__buttons__con a .additional__button{
+        width: 100%;
+        height: 45px;
+        margin-bottom: 10px;
+        border-radius: 50px;
+        border: 1px solid rgba(128, 128, 128, 0.534);
+        background-color: transparent;
+        font-size: 16px;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form .additional__buttons__con a .facebook{
+        height: 50px;
+        background-color:#1d51b9;
+        border: none;
+        color: white;
+    }
+
+    .main__con .credits{
+        font-size: 12px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width:650px) and (max-width:800px){
+
+    nav{
+        width: 100%;
+        height: 10vh;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    
+    }
+    nav .logo{
+        font-family: 'Work Sans';
+        font-weight: 700;
+        font-size: 2rem;
+        margin-left: 20px;
+    }
+    
+    
+    nav .access{
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav .access select{
+        width: 50px;
+        background-color: transparent;
+        margin: 0;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    nav .access select option{
+        width: 100px;
+        color: black;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    
+    nav .access a i{
+        font-size: 40px;
+        margin: 0;
+        color: var(--color-gray);
+    }
+
+    .main__con{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 80px;
+        background-color: white;
+    }
+    .form__container{
+        width: 80%;
+        height: 100%;
+        background-color: transparent;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border: none;
+    }
+
+    .form__container form{
+        width: 80%;
+        height: 80%;
+        background-color: white;
+    }
+
+
+    form .additional__buttons__con a .additional__button{
+        width: 100%;
+        height: 45px;
+        margin-bottom: 10px;
+        border-radius: 50px;
+        border: 1px solid rgba(128, 128, 128, 0.534);
+        background-color: transparent;
+        font-size: 16px;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form .additional__buttons__con a .facebook{
+        height: 50px;
+        background-color:#1d51b9;
+        border: none;
+        color: white;
+    }
+
+    .main__con .credits{
+        font-size: 12px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (min-width:801px) and (max-width:900px){
+
+    .form__container{
+        width: 60%;
+        height: 100%;
+        background-color: transparent;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border: none;
+    }
+}
+@media screen and (min-width:901px) and (max-width:1100px){
+
+    .form__container{
+        width: 70%;
+        height: 100%;
+        background-color: transparent;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border: none;
+    }
 }
 
