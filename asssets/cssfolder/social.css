@@ -181,7 +181,10 @@ nav .search__bar input[type="search"]::placeholder, i{
 .nav__select .nav__select__con:hover{
     background: var(--color-primary);
 }
-.nav__select .nav__select__con:hover i, p{
+.nav__select .nav__select__con:hover p{
+    color: var(--color-white);
+}
+.nav__select .nav__select__con:hover i{
     color: var(--color-white);
 }
 
@@ -222,18 +225,114 @@ nav .create .notmessage .profile__photo{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    position: relative;
+    overflow: visible;
 }
 
-nav .create .notmessage .profile__photo:hover  .notmessage-icon{
-    font-size: 1.8rem;
-    rotate: 10deg;
-    transition: all 300ms ease;
-}
 nav .create .notmessage .profile__photo i{
     color: var(--color-primary);
     font-size: 1.5rem;
 }
 
+nav .create .notmessage .profile__photo:hover:before{
+    content: '';
+    width: 0.7rem;
+    height: 0.7rem;
+    background: var(--color-dark);
+    position: absolute;
+    bottom: -35%;
+    transform: translate(50%,-50%);
+    transform: rotate(45deg);
+    display: block;
+
+}
+nav .create .notmessage .profile__photo:hover::after{
+    content: 'Notifications';
+    width: 5rem;
+    height: 1.5rem;
+    border-radius: 3px;
+    background: var(--color-dark);
+    position: absolute;
+    bottom: -75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: white;
+
+}
+nav .create .notmessage .nav__message:hover:before{
+    content: '';
+    width: 0.7rem;
+    height: 0.7rem;
+    background: var(--color-dark);
+    position: absolute;
+    bottom: -35%;
+    transform: translate(50%,-50%);
+    transform: rotate(45deg);
+    display: block;
+
+}
+nav .create .notmessage .nav__message:hover::after{
+    content: 'Messages';
+    width: 5rem;
+    height: 1.5rem;
+    border-radius: 3px;
+    background: var(--color-dark);
+    position: absolute;
+    bottom: -75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: white;
+
+}
+
+
+nav .create .nav__profile{
+    position: relative;
+    overflow: visible;
+}
+
+nav .create .nav__profile img{
+    border-radius: 50%;
+}
+
+
+
+nav .create  .nav__profile:hover:before{
+    content: '';
+    width: 0.7rem;
+    height: 0.7rem;
+    background: var(--color-dark);
+    position: absolute;
+    bottom: -35%;
+    left: 50%;
+    transform: translate(50%,-50%);
+    transform: rotate(45deg);
+    display: block;
+
+}
+nav .create  .nav__profile:hover::after{
+    content: 'Your Profile';
+    width: 5rem;
+    height: 1.5rem;
+    border-radius: 3px;
+    background: var(--color-dark);
+    position: absolute;
+    bottom: -75%;
+    left: -30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: white;
+
+}
 
 /*=================================== MAIN ===================================*/
 /*=================================== MAIN ===================================*/
@@ -766,16 +865,20 @@ main .container .left .side__bar .menu__items{
     align-items: center;
     cursor: pointer;
 }
+ .post .comments .reply__con .reply i{
+    color: var(--color-dark);
+}
  .post .comments .reply__con .reply small{
     font-weight: 500;
     font-size: 0.7rem;
+    color: var(--color-dark);
 }
  .post .comments .reply__con .reply span{
     color: white;
     font-size: 0.6rem;
     padding: 0.2rem 0.3rem;
     border-radius: var(--card-border-radius);
-    background-color: var(--color-gray);
+    background-color: var(--color-dark);
     margin-left: 0.3rem;
 }
  .post .comments .reply__con .vote{
@@ -898,6 +1001,7 @@ main .container .right .messages{
     align-items: start;
     gap: 1rem;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 .right .messages .message .profile__photo{
     position: relative;
@@ -1124,6 +1228,9 @@ main .container .right .messages{
     margin-right: 1rem;
 }
 
+.menu__control{
+    display: none;
+}
 
 /*========================== MEDIA QUERIES FOR big TABLETS AND small laptops ================================*/
 @media screen and (max-width:1200px) {
@@ -1248,14 +1355,13 @@ main .container .right .messages{
 
     /* notification pop up */
 
-    .left .notifications__popup{
+    .left .side__bar .notifications__popup{
         position: absolute;
         left: -20rem;
         width: 20rem;
-        
     }
 
-    .left .notifications__popup::before{
+    .left .side__bar .notifications__popup::before{
         display: absolute;
         top: 1.3rem;
         left: calc(20rem - 0.6rem);
@@ -1277,21 +1383,30 @@ main .container .right .messages{
     .create__post .btn {
         font-size: 12px;
     }
+
+    .customize__theme .card{
+        width: 95vw;
+    }
 }
 
 
 
 /*========================== MEDIA QUERIES FOR SMALL TABLETS AND MOBILE PHONE ================================*/
 
-@media screen and (max-width:500px){
+@media screen and (max-width:570px){
 
     :root{
 
         --btn-padding:0.3rem 1rem;
     }
 
+    nav .logo{
+        margin: 0;
+    }
     .nav__select{
+        gap: 0.8rem;
       margin: 0;
+      width: 9.5rem;
     }
 
     .nav__select p{
@@ -1303,6 +1418,10 @@ main .container .right .messages{
         width: 2.5rem;
         height: 2.5rem;
         border-radius: 50%;
+    }
+
+    nav .create{
+        margin: 0;
     }
 
 
@@ -1335,7 +1454,131 @@ main .container .right .messages{
     }
 
     main .container .left{
-       display: none;
+       position: fixed;
+       bottom: 0;
+       right: -100%;
     }
 
+    .middle .stories .my__story{
+        display: none;
+    }
+
+
+    .middle .stories{
+        display: flex;
+        justify-content: center;
+        height: 10rem;
+        gap: 0.3rem;
+       
+    }
+     .stories .story{
+         width: 25%;
+     }
+
+
+     .post .action__buttons .interaction__buttons i{
+        font-size: 1.4rem;
+    }
+     .post .action__buttons .save i{
+        font-size: 1.4rem;
+    }
+
+     .post .comments .comment .attach{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        width: 90%;
+        background: var(--color-light);
+        border-radius: var(--border-radius);
+    }
+     .post .comments .comment .attach input[type="text"]{
+        width: 60%;
+        padding: var(--search-padding);
+        background-color: transparent;
+        font-size: 0.8rem;
+        color: var(--color-gray);
+    }
+
+
+
+.post .comments .commenter{
+   display: flex;
+   align-items: center;
+   gap: 0.8rem;
+   margin: 0.8rem 0;
+}
+
+    .post .comments .commenter .profile__photo{
+        width: 4rem;
+        height:4rem;
+    }
+
+    .middle .post .comments .reply__con{
+        width: 98%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .middle .post .comments .reply__con .reply{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+     .post .comments .reply__con .reply i{
+        color: var(--color-dark);
+    }
+     .post .comments .reply__con .reply small{
+        font-weight: 500;
+        font-size: 0.7rem;
+        color: var(--color-dark);
+    }
+     .post .comments .reply__con .reply span{
+        color: white;
+        font-size: 0.6rem;
+        padding: 0.2rem 0.3rem;
+        border-radius: var(--card-border-radius);
+        background-color: var(--color-dark);
+        margin-left: 0.3rem;
+    }
+
+
+    .customize__theme .choose__bg > div{
+        padding: var(--card-padding);
+        width: 35%;
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 0.4rem;
+        cursor: pointer;
+    }
+
+    .customize__theme .choose__bg > div span{
+        width: 0.7rem;
+        height: 0.7rem;
+        border-radius: 50%;
+        border: 2px solid var(--color-gray);
+        margin-right: 0.2rem;
+    }
+
+    .menu__control{
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        right: 5%;
+        bottom: 5%;
+        background: var(--color-light);
+    }
+
+    .menu__control i{
+        font-size: 2.5rem;
+        color: var(--color-black);
+        margin: 0;
+
+    }
 }
