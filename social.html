@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!------------- ICON SCOUT CDN LINK --------->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+     <!------------- IREMIX ICON CDN LINK --------->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+     <!------------- BOXICON CDN LINK --------->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!------------- BOOTSTRAP CDN LINK --------->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
      <!------------- CSS STYLESHEET LINK --------->
@@ -19,10 +23,23 @@
     <nav>
         <div class="container">
             <h2 class="logo">Social</h2>
-            <div class="search__bar">
+         <div class="search__select">
+             <div class="search__bar">
                 <i class="uil uil-search"></i>
                 <input type="search" placeholder="Search for creators, inspirations, projects, influencers, and lots more">
             </div>
+                <div class="nav__select">
+                <div class="nav__select__con nav__feeds" id="feeds">
+                    <i class="ri-home-5-line"></i> <p class="feeds" >Feeds</p>
+                </div>
+                <div class="nav__select__con nav__videos" id="videos">
+                    <i class="ri-movie-line"></i> <p class="videos" >Videos</p>
+                </div>
+                <div class="nav__select__con nav__live" id="live">
+                    <i class="ri-live-line"></i></i> <p class="live">Live</p>
+                </div>
+                </div>
+         </div>
             <div class="create">
                <div class="notmessage">
                 <div class="profile__photo">
@@ -66,9 +83,6 @@
                 <div class="side__bar">
                     <a class="menu__items active">
                         <span><i class="uil uil-home"></i></span> <h3>Home</h3>
-                    </a>
-                    <a class="menu__items">
-                        <span><i class="uil uil-compass"></i></span> <h3>Explore</h3>
                     </a>
                     <a class="menu__items" id="notifications">
                         <span><i class="uil uil-bell"><small class="notification__count">9+</small></i></span> <h3>Notifications</h3>
@@ -135,34 +149,1863 @@
                     <!------------- END OF NOTIFICATION POPUP ------------->
     
                     <a class="menu__items" id="messages-notification">
-                        <span><i class="uil uil-enevelope"><small class="notification__count">6+</small></i></span> <h3>Messages</h3>
-                    </a>
-                    <a class="menu__items">
-                        <span><i class="uil uil-bookmark"></i></span> <h3>Bookmarks</h3>
-                    </a>
-                    <a class="menu__items">
-                        <span><i class="uil uil-chart-line"></i></span> <h3>Analytics</h3>
+                        <span><i class="uil uil-envelope-alt"><small class="notification__count">6+</small></i></span> <h3>Messages</h3>
                     </a>
                     <a class="menu__items">
                         <span><i class="uil uil-palette"></i></span> <h3>Theme</h3>
                     </a>
                     <a class="menu__items">
-                        <span><i class="uil uil-settings"></i></span> <h3>Settings</h3>
+                        <i class="uil uil-setting"></i></span><h3>Settings</h3>
                     </a>
+
+                    <div class="community__wrapper">
+                <div class="community__con">
+                    <div class="community__header">
+                        <h4>My community</h4>
+                        <small>29</small>
+                    </div>
+                    <div class="community">
+                        <div class="profile__photo">
+                            <img src="./asssets/images/profile-4.jpg" alt="">
+                        </div>
+                        <div class="community__body">
+                            <b>Football HQ</b>
+                            <small class="text__muted">50k Members</small>
+                        </div>
+                    </div>
+                    <div class="community">
+                        <div class="profile__photo">
+                            <img src="./asssets/images/profile-4.jpg" alt="">
+                        </div>
+                        <div class="community__body">
+                            <b>Football HQ</b>
+                            <small class="text__muted">50k Members</small>
+                        </div>
+                    </div>
+                    <div class="community">
+                        <div class="profile__photo">
+                            <img src="./asssets/images/profile-4.jpg" alt="">
+                        </div>
+                        <div class="community__body">
+                            <b>Football HQ</b>
+                            <small class="text__muted">50k Members</small>
+                        </div>
+                    </div>
+                </div>
+                    </div>
                 </div>
                 <!------------- END OF SIDEBAR ------------->
-                <label for="create__post" class="btn btn__primary">Create Post</label>
+
             </div>
+
+            <!------------- END OF LEFT ------------->
     
-            <!------------- MIDDLE  ------------->
+            <!------------- MIDDLE  WWRAP------------->
+
+            <div class="middle__wrap">
+                <div class="middle">
+                    <!------------- STORIES  ------------->
+                        
+                        
+                    <!------------- STORIES  ------------->
     
-            <div class="middle">
+                    <div class="stories">
+                        <div class="story">
+                            <div class="profile__photo">
+                                <img src="./asssets/images/profile-1.jpg" alt="">
+                            </div>
+                            <p class="name">Your story</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile__photo">
+                                <img src="./asssets/images/fabrizio.jpg" alt="">
+                            </div>
+                            <p class="name">Fabrizio Romano</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile__photo">
+                                <img src="./asssets/images/gerad.jpg" alt="">
+                            </div>
+                            <p class="name">Gerard Romero</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile__photo">
+                                <img src="./asssets/images/oh my goal.jpg" alt="">
+                            </div>
+                            <p class="name">Oh My Goal</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile__photo">
+                                <img src="./asssets/images/goal.png" alt="">
+                            </div>
+                            <p class="name">Goal</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile__photo">
+                                <img src="./asssets/images/FC_Barcelona_(crest).svg.webp" alt="">
+                            </div>
+                            <p class="name">Barcelona</p>
+                        </div>
+                    </div>
+                    <!------------- END OF STORIES ------------->
+                    <form action="#" class="create__post">
+                        <div class="profile__photo">
+                            <img src="./asssets/images/profile-1.jpg" alt="">
+                        </div>
+                        <div class="add">
+                            <input type="text" placeholder="What's on your mind?" id="create-post">
+                        <i class="ri-image-add-fill"></i>
+                        </div>
+                        <input type="submit" value="Post" class="btn btn__primary">
+                    </form>
     
+                    <!----------------------- POSTS --------------------->
+                    <div class="posts">
+                        <div class="post">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/oh my goal.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Oh My Goal <p>Follow</p></h3>
+                                        <small>Suggested<i class="ri-earth-fill"></i></small>
+                                    </div>
+                                </div>
+                                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                            </div>
+                            <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sed. <span>#footballbanters</span></div>
+                            <div class="photo">
+                                <img src="./asssets/images/feed-1.jpg" alt="feed">
+                            </div>
+    
+                            <div class="action__buttons">
+                                <div class="interaction__buttons">
+                                    <span><p>1</p><i class="ri-heart-line"></i></span>
+                                    <span><i class="ri-discuss-line"></i></span>
+                                    <span><i class="ri-share-line"></i></span>
+    
+                                </div>
+    
+                                <div class="save">
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="attach">
+                                        <input type="text" placeholder="What's on your mind?">
+                                    <div class="comment__icons">
+                                        <span><i class="ri-camera-line"></i></span>
+                                        <span><i class="ri-image-line"></i></span>
+                                        <span><i class="ri-attachment-2"></i></i></span>
+                                        <span><i class='bx bx-smile'></i></i></span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="sort">
+                                    <div class="all"><p>All Comments</p><i class="ri-arrow-down-s-line"></i></div>
+                                    <div class="sort__by"><small class="text__muted">Sort By <strong>Most Popular</strong></div>
+                                </div>
+    
+                                <div class="commenter">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="main__comment">
+                                        <strong>Joseph Gallagher</strong><small class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit harum sapiente id, nobis necessitatibus.</small>
+                                    </div>
+                                </div>
+                                <div class="reply__con">
+                                    <div class="reply">
+                                        <i class="uil uil-corner-down-right-alt"></i>
+                                        <small>Reply Comment</small>
+                                        <span>25</span>
+                                    </div>
+                                    <div class="vote">
+                                      <span><i class='bx bx-upvote'></i> Upvote</span>
+                                      <span><i class='bx bx-downvote' ></i> Downvote</span>
+                                    </div>
+                                </div>
+                                <div class="view__con">
+                                    <div class="view">
+                                        <a href="#">View all comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                    <div class="posts">
+                        <div class="post">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/nike.png" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Nike <p>Follow</p></h3>
+                                        <small>Sponsored <i class="ri-earth-fill"></i></small>
+                                    </div>
+                                </div>
+                                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                            </div>
+                            <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sed. <span>#footballbanters</span></div>
+                            <div class="photo">
+                                <img src="./asssets/images/feed-1.jpg" alt="feed">
+                            </div>
+    
+                            <div class="action__buttons">
+                                <div class="interaction__buttons">
+                                    <span><p>1</p><i class="ri-heart-line"></i></span>
+                                    <span><i class="ri-discuss-line"></i></span>
+                                    <span><i class="ri-share-line"></i></span>
+    
+                                </div>
+    
+                                <div class="save">
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="attach">
+                                        <input type="text" placeholder="What's on your mind?">
+                                    <div class="comment__icons">
+                                        <span><i class="ri-camera-line"></i></span>
+                                        <span><i class="ri-image-line"></i></span>
+                                        <span><i class="ri-attachment-2"></i></i></span>
+                                        <span><i class='bx bx-smile'></i></i></span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="sort">
+                                    <div class="all"><p>All Comments</p><i class="ri-arrow-down-s-line"></i></div>
+                                    <div class="sort__by"><small class="text__muted">Sort By <strong>Most Popular</strong></div>
+                                </div>
+    
+                                <div class="commenter">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="main__comment">
+                                        <strong>Joseph Gallagher</strong><small class="text__muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit harum sapiente id, nobis necessitatibus.</small>
+                                    </div>
+                                </div>
+                                <div class="reply__con">
+                                    <div class="reply">
+                                        <i class="uil uil-corner-down-right-alt"></i>
+                                        <small>Reply Comment</small>
+                                        <span>25</span>
+                                    </div>
+                                    <div class="vote">
+                                      <span><i class='bx bx-upvote'></i> Upvote</span>
+                                      <span><i class='bx bx-downvote' ></i> Downvote</span>
+                                    </div>
+                                </div>
+                                <div class="view__con">
+                                    <div class="view">
+                                        <a href="#">View all comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                    <div class="posts">
+                        <div class="post">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/FC_Barcelona_(crest).svg.webp" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Barcelona <p>Follow</p></h3>
+                                        <small>Suggested<i class="ri-earth-fill"></i></small>
+                                    </div>
+                                </div>
+                                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                            </div>
+                            <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sed. <span>#footballbanters</span></div>
+                            <div class="photo">
+                                <img src="./asssets/images/feed-1.jpg" alt="feed">
+                            </div>
+    
+                            <div class="action__buttons">
+                                <div class="interaction__buttons">
+                                    <span><p>1</p><i class="ri-heart-line"></i></span>
+                                    <span><i class="ri-discuss-line"></i></span>
+                                    <span><i class="ri-share-line"></i></span>
+    
+                                </div>
+    
+                                <div class="save">
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="attach">
+                                        <input type="text" placeholder="What's on your mind?">
+                                    <div class="comment__icons">
+                                        <span><i class="ri-camera-line"></i></span>
+                                        <span><i class="ri-image-line"></i></span>
+                                        <span><i class="ri-attachment-2"></i></i></span>
+                                        <span><i class='bx bx-smile'></i></i></span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="sort">
+                                    <div class="all"><p>All Comments</p><i class="ri-arrow-down-s-line"></i></div>
+                                    <div class="sort__by"><small class="text__muted">Sort By <strong>Most Popular</strong></div>
+                                </div>
+    
+                                <div class="commenter">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="main__comment">
+                                        <strong>Joseph Gallagher</strong><small class="text__muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit harum sapiente id, nobis necessitatibus.</small>
+                                    </div>
+                                </div>
+                                <div class="reply__con">
+                                    <div class="reply">
+                                        <i class="uil uil-corner-down-right-alt"></i>
+                                        <small>Reply Comment</small>
+                                        <span>25</span>
+                                    </div>
+                                    <div class="vote">
+                                      <span><i class='bx bx-upvote'></i> Upvote</span>
+                                      <span><i class='bx bx-downvote' ></i> Downvote</span>
+                                    </div>
+                                </div>
+                                <div class="view__con">
+                                    <div class="view">
+                                        <a href="#">View all comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                    <div class="posts">
+                        <div class="post">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/goal.png" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Goal <p>Follow</p></h3>
+                                        <small>Suggested <i class="ri-earth-fill"></i></small>
+                                    </div>
+                                </div>
+                                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                            </div>
+                            <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sed. <span>#footballbanters</span></div>
+                            <div class="photo">
+                                <img src="./asssets/images/feed-1.jpg" alt="feed">
+                            </div>
+    
+                            <div class="action__buttons">
+                                <div class="interaction__buttons">
+                                    <span><p>1</p><i class="ri-heart-line"></i></span>
+                                    <span><i class="ri-discuss-line"></i></span>
+                                    <span><i class="ri-share-line"></i></span>
+    
+                                </div>
+    
+                                <div class="save">
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="attach">
+                                        <input type="text" placeholder="What's on your mind?">
+                                    <div class="comment__icons">
+                                        <span><i class="ri-camera-line"></i></span>
+                                        <span><i class="ri-image-line"></i></span>
+                                        <span><i class="ri-attachment-2"></i></i></span>
+                                        <span><i class='bx bx-smile'></i></i></span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="sort">
+                                    <div class="all"><p>All Comments</p><i class="ri-arrow-down-s-line"></i></div>
+                                    <div class="sort__by"><small class="text__muted">Sort By <strong>Most Popular</strong></div>
+                                </div>
+    
+                                <div class="commenter">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="main__comment">
+                                        <strong>Joseph Gallagher</strong><small class="text__muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit harum sapiente id, nobis necessitatibus.</small>
+                                    </div>
+                                </div>
+                                <div class="reply__con">
+                                    <div class="reply">
+                                        <i class="uil uil-corner-down-right-alt"></i>
+                                        <small>Reply Comment</small>
+                                        <span>25</span>
+                                    </div>
+                                    <div class="vote">
+                                      <span><i class='bx bx-upvote'></i> Upvote</span>
+                                      <span><i class='bx bx-downvote' ></i> Downvote</span>
+                                    </div>
+                                </div>
+                                <div class="view__con">
+                                    <div class="view">
+                                        <a href="#">View all comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                    <div class="posts">
+                        <div class="post">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/adidas.png" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Adidas <p>Follow</p></h3>
+                                        <small>Sponsored <i class="ri-earth-fill"></i></small>
+                                    </div>
+                                </div>
+                                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                            </div>
+                            <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sed. <span>#footballbanters</span></div>
+                            <div class="photo">
+                                <img src="./asssets/images/feed-1.jpg" alt="feed">
+                            </div>
+    
+                            <div class="action__buttons">
+                                <div class="interaction__buttons">
+                                    <span><p>1</p><i class="ri-heart-line"></i></span>
+                                    <span><i class="ri-discuss-line"></i></span>
+                                    <span><i class="ri-share-line"></i></span>
+    
+                                </div>
+    
+                                <div class="save">
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="attach">
+                                        <input type="text" placeholder="What's on your mind?">
+                                    <div class="comment__icons">
+                                        <span><i class="ri-camera-line"></i></span>
+                                        <span><i class="ri-image-line"></i></span>
+                                        <span><i class="ri-attachment-2"></i></i></span>
+                                        <span><i class='bx bx-smile'></i></i></span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="sort">
+                                    <div class="all"><p>All Comments</p><i class="ri-arrow-down-s-line"></i></div>
+                                    <div class="sort__by"><small class="text__muted">Sort By <strong>Most Popular</strong></div>
+                                </div>
+    
+                                <div class="commenter">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="main__comment">
+                                        <strong>Joseph Gallagher</strong><small class="text__muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit harum sapiente id, nobis necessitatibus.</small>
+                                    </div>
+                                </div>
+                                <div class="reply__con">
+                                    <div class="reply">
+                                        <i class="uil uil-corner-down-right-alt"></i>
+                                        <small>Reply Comment</small>
+                                        <span>25</span>
+                                    </div>
+                                    <div class="vote">
+                                      <span><i class='bx bx-upvote'></i> Upvote</span>
+                                      <span><i class='bx bx-downvote' ></i> Downvote</span>
+                                    </div>
+                                </div>
+                                <div class="view__con">
+                                    <div class="view">
+                                        <a href="#">View all comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                    <div class="posts">
+                        <div class="post">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/nba.png" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>NBA <p>Follow</p></h3>
+                                        <small>Suggested <i class="ri-earth-fill"></i></small>
+                                    </div>
+                                </div>
+                                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                            </div>
+                            <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sed. <span>#footballbanters</span></div>
+                            <div class="photo">
+                                <img src="./asssets/images/feed-1.jpg" alt="feed">
+                            </div>
+    
+                            <div class="action__buttons">
+                                <div class="interaction__buttons">
+                                    <span><p>1</p><i class="ri-heart-line"></i></span>
+                                    <span><i class="ri-discuss-line"></i></span>
+                                    <span><i class="ri-share-line"></i></span>
+    
+                                </div>
+    
+                                <div class="save">
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="attach">
+                                        <input type="text" placeholder="What's on your mind?">
+                                    <div class="comment__icons">
+                                        <span><i class="ri-camera-line"></i></span>
+                                        <span><i class="ri-image-line"></i></span>
+                                        <span><i class="ri-attachment-2"></i></i></span>
+                                        <span><i class='bx bx-smile'></i></i></span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="sort">
+                                    <div class="all"><p>All Comments</p><i class="ri-arrow-down-s-line"></i></div>
+                                    <div class="sort__by"><small class="text__muted">Sort By <strong>Most Popular</strong></div>
+                                </div>
+    
+                                <div class="commenter">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="main__comment">
+                                        <strong>Joseph Gallagher</strong><small class="text__muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit harum sapiente id, nobis necessitatibus.</small>
+                                    </div>
+                                </div>
+                                <div class="reply__con">
+                                    <div class="reply">
+                                        <i class="uil uil-corner-down-right-alt"></i>
+                                        <small>Reply Comment</small>
+                                        <span>25</span>
+                                    </div>
+                                    <div class="vote">
+                                      <span><i class='bx bx-upvote'></i> Upvote</span>
+                                      <span><i class='bx bx-downvote' ></i> Downvote</span>
+                                    </div>
+                                </div>
+                                <div class="view__con">
+                                    <div class="view">
+                                        <a href="#">View all comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+    
+                    <!----------------------- END OF POSTS --------------------->
+                </div>
+                <!------------- MIDDLE  ------------->
+        
+                <div class="middle2">
+                    <!------------- STORIES  ------------->
+                        
+                        
+                    <!------------- STORIES  ------------->
+    
+                    <div class="stories">
+                        <div class="story">
+                            <div class="profile__photo">
+                                <img src="./asssets/images/profile-17.jpg" alt="">
+                            </div>
+                            <p class="name">Your story</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile__photo">
+                                <img src="./asssets/images/profile-17.jpg" alt="">
+                            </div>
+                            <p class="name">Fabrizio Romano</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile__photo">
+                                <img src="./asssets/images/profile-17.jpg" alt="">
+                            </div>
+                            <p class="name">Gerard Romero</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile__photo">
+                                <img src="./asssets/images/profile-17.jpg" alt="">
+                            </div>
+                            <p class="name">Oh My Goal</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile__photo">
+                                <img src="./asssets/images/profile-17.jpg" alt="">
+                            </div>
+                            <p class="name">Soccer Stories</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile__photo">
+                                <img src="./asssets/images/profile-17.jpg" alt="">
+                            </div>
+                            <p class="name">Barcelona</p>
+                        </div>
+                    </div>
+                    <!------------- END OF STORIES ------------->
+                    <form action="#" class="create__post">
+                        <div class="profile__photo">
+                            <img src="./asssets/images/profile-1.jpg" alt="">
+                        </div>
+                        <div class="add">
+                            <input type="text" placeholder="What's on your mind?" id="create-post">
+                        <i class="ri-image-add-fill"></i>
+                        </div>
+                        <input type="submit" value="Post" class="btn btn__primary">
+                    </form>
+    
+                    <!----------------------- POSTS --------------------->
+                    <div class="posts">
+                        <div class="post">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-13.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Haris Ejaz</h3>
+                                        <small>Dubai, 15 minutes ago <i class="ri-earth-fill"></i></small>
+                                    </div>
+                                </div>
+                                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                            </div>
+                            <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sed. <span>#footballbanters</span></div>
+                            <div class="photo">
+                                <img src="./asssets/images/feed-1.jpg" alt="feed">
+                            </div>
+    
+                            <div class="action__buttons">
+                                <div class="interaction__buttons">
+                                    <span><p>1</p><i class="ri-heart-line"></i></span>
+                                    <span><i class="ri-discuss-line"></i></span>
+                                    <span><i class="ri-share-line"></i></span>
+    
+                                </div>
+    
+                                <div class="save">
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="attach">
+                                        <input type="text" placeholder="What's on your mind?">
+                                    <div class="comment__icons">
+                                        <span><i class="ri-camera-line"></i></span>
+                                        <span><i class="ri-image-line"></i></span>
+                                        <span><i class="ri-attachment-2"></i></i></span>
+                                        <span><i class='bx bx-smile'></i></i></span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="sort">
+                                    <div class="all"><p>All Comments</p><i class="ri-arrow-down-s-line"></i></div>
+                                    <div class="sort__by"><small class="text__muted">Sort By <strong>Most Popular</strong></div>
+                                </div>
+    
+                                <div class="commenter">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="main__comment">
+                                        <strong>Joseph Gallagher</strong><small class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit harum sapiente id, nobis necessitatibus.</small>
+                                    </div>
+                                </div>
+                                <div class="reply__con">
+                                    <div class="reply">
+                                        <i class="uil uil-corner-down-right-alt"></i>
+                                        <small>Reply Comment</small>
+                                        <span>25</span>
+                                    </div>
+                                    <div class="vote">
+                                      <span><i class='bx bx-upvote'></i> Upvote</span>
+                                      <span><i class='bx bx-downvote' ></i> Downvote</span>
+                                    </div>
+                                </div>
+                                <div class="view__con">
+                                    <div class="view">
+                                        <a href="#">View all comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                    <div class="posts">
+                        <div class="post">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-13.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Haris Ejaz</h3>
+                                        <small>Dubai, 15 minutes ago <i class="ri-earth-fill"></i></small>
+                                    </div>
+                                </div>
+                                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                            </div>
+                            <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sed. <span>#footballbanters</span></div>
+                            <div class="photo">
+                                <img src="./asssets/images/feed-1.jpg" alt="feed">
+                            </div>
+    
+                            <div class="action__buttons">
+                                <div class="interaction__buttons">
+                                    <span><p>1</p><i class="ri-heart-line"></i></span>
+                                    <span><i class="ri-discuss-line"></i></span>
+                                    <span><i class="ri-share-line"></i></span>
+    
+                                </div>
+    
+                                <div class="save">
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="attach">
+                                        <input type="text" placeholder="What's on your mind?">
+                                    <div class="comment__icons">
+                                        <span><i class="ri-camera-line"></i></span>
+                                        <span><i class="ri-image-line"></i></span>
+                                        <span><i class="ri-attachment-2"></i></i></span>
+                                        <span><i class='bx bx-smile'></i></i></span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="sort">
+                                    <div class="all"><p>All Comments</p><i class="ri-arrow-down-s-line"></i></div>
+                                    <div class="sort__by"><small class="text__muted">Sort By <strong>Most Popular</strong></div>
+                                </div>
+    
+                                <div class="commenter">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="main__comment">
+                                        <strong>Joseph Gallagher</strong><small class="text__muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit harum sapiente id, nobis necessitatibus.</small>
+                                    </div>
+                                </div>
+                                <div class="reply__con">
+                                    <div class="reply">
+                                        <i class="uil uil-corner-down-right-alt"></i>
+                                        <small>Reply Comment</small>
+                                        <span>25</span>
+                                    </div>
+                                    <div class="vote">
+                                      <span><i class='bx bx-upvote'></i> Upvote</span>
+                                      <span><i class='bx bx-downvote' ></i> Downvote</span>
+                                    </div>
+                                </div>
+                                <div class="view__con">
+                                    <div class="view">
+                                        <a href="#">View all comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                    <div class="posts">
+                        <div class="post">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-13.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Haris Ejaz</h3>
+                                        <small>Dubai, 15 minutes ago <i class="ri-earth-fill"></i></small>
+                                    </div>
+                                </div>
+                                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                            </div>
+                            <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sed. <span>#footballbanters</span></div>
+                            <div class="photo">
+                                <img src="./asssets/images/feed-1.jpg" alt="feed">
+                            </div>
+    
+                            <div class="action__buttons">
+                                <div class="interaction__buttons">
+                                    <span><p>1</p><i class="ri-heart-line"></i></span>
+                                    <span><i class="ri-discuss-line"></i></span>
+                                    <span><i class="ri-share-line"></i></span>
+    
+                                </div>
+    
+                                <div class="save">
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="attach">
+                                        <input type="text" placeholder="What's on your mind?">
+                                    <div class="comment__icons">
+                                        <span><i class="ri-camera-line"></i></span>
+                                        <span><i class="ri-image-line"></i></span>
+                                        <span><i class="ri-attachment-2"></i></i></span>
+                                        <span><i class='bx bx-smile'></i></i></span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="sort">
+                                    <div class="all"><p>All Comments</p><i class="ri-arrow-down-s-line"></i></div>
+                                    <div class="sort__by"><small class="text__muted">Sort By <strong>Most Popular</strong></div>
+                                </div>
+    
+                                <div class="commenter">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="main__comment">
+                                        <strong>Joseph Gallagher</strong><small class="text__muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit harum sapiente id, nobis necessitatibus.</small>
+                                    </div>
+                                </div>
+                                <div class="reply__con">
+                                    <div class="reply">
+                                        <i class="uil uil-corner-down-right-alt"></i>
+                                        <small>Reply Comment</small>
+                                        <span>25</span>
+                                    </div>
+                                    <div class="vote">
+                                      <span><i class='bx bx-upvote'></i> Upvote</span>
+                                      <span><i class='bx bx-downvote' ></i> Downvote</span>
+                                    </div>
+                                </div>
+                                <div class="view__con">
+                                    <div class="view">
+                                        <a href="#">View all comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                    <div class="posts">
+                        <div class="post">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-13.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Haris Ejaz</h3>
+                                        <small>Dubai, 15 minutes ago <i class="ri-earth-fill"></i></small>
+                                    </div>
+                                </div>
+                                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                            </div>
+                            <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sed. <span>#footballbanters</span></div>
+                            <div class="photo">
+                                <img src="./asssets/images/feed-1.jpg" alt="feed">
+                            </div>
+    
+                            <div class="action__buttons">
+                                <div class="interaction__buttons">
+                                    <span><p>1</p><i class="ri-heart-line"></i></span>
+                                    <span><i class="ri-discuss-line"></i></span>
+                                    <span><i class="ri-share-line"></i></span>
+    
+                                </div>
+    
+                                <div class="save">
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="attach">
+                                        <input type="text" placeholder="What's on your mind?">
+                                    <div class="comment__icons">
+                                        <span><i class="ri-camera-line"></i></span>
+                                        <span><i class="ri-image-line"></i></span>
+                                        <span><i class="ri-attachment-2"></i></i></span>
+                                        <span><i class='bx bx-smile'></i></i></span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="sort">
+                                    <div class="all"><p>All Comments</p><i class="ri-arrow-down-s-line"></i></div>
+                                    <div class="sort__by"><small class="text__muted">Sort By <strong>Most Popular</strong></div>
+                                </div>
+    
+                                <div class="commenter">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="main__comment">
+                                        <strong>Joseph Gallagher</strong><small class="text__muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit harum sapiente id, nobis necessitatibus.</small>
+                                    </div>
+                                </div>
+                                <div class="reply__con">
+                                    <div class="reply">
+                                        <i class="uil uil-corner-down-right-alt"></i>
+                                        <small>Reply Comment</small>
+                                        <span>25</span>
+                                    </div>
+                                    <div class="vote">
+                                      <span><i class='bx bx-upvote'></i> Upvote</span>
+                                      <span><i class='bx bx-downvote' ></i> Downvote</span>
+                                    </div>
+                                </div>
+                                <div class="view__con">
+                                    <div class="view">
+                                        <a href="#">View all comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                    <div class="posts">
+                        <div class="post">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-13.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Haris Ejaz</h3>
+                                        <small>Dubai, 15 minutes ago <i class="ri-earth-fill"></i></small>
+                                    </div>
+                                </div>
+                                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                            </div>
+                            <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sed. <span>#footballbanters</span></div>
+                            <div class="photo">
+                                <img src="./asssets/images/feed-1.jpg" alt="feed">
+                            </div>
+    
+                            <div class="action__buttons">
+                                <div class="interaction__buttons">
+                                    <span><p>1</p><i class="ri-heart-line"></i></span>
+                                    <span><i class="ri-discuss-line"></i></span>
+                                    <span><i class="ri-share-line"></i></span>
+    
+                                </div>
+    
+                                <div class="save">
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="attach">
+                                        <input type="text" placeholder="What's on your mind?">
+                                    <div class="comment__icons">
+                                        <span><i class="ri-camera-line"></i></span>
+                                        <span><i class="ri-image-line"></i></span>
+                                        <span><i class="ri-attachment-2"></i></i></span>
+                                        <span><i class='bx bx-smile'></i></i></span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="sort">
+                                    <div class="all"><p>All Comments</p><i class="ri-arrow-down-s-line"></i></div>
+                                    <div class="sort__by"><small class="text__muted">Sort By <strong>Most Popular</strong></div>
+                                </div>
+    
+                                <div class="commenter">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="main__comment">
+                                        <strong>Joseph Gallagher</strong><small class="text__muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit harum sapiente id, nobis necessitatibus.</small>
+                                    </div>
+                                </div>
+                                <div class="reply__con">
+                                    <div class="reply">
+                                        <i class="uil uil-corner-down-right-alt"></i>
+                                        <small>Reply Comment</small>
+                                        <span>25</span>
+                                    </div>
+                                    <div class="vote">
+                                      <span><i class='bx bx-upvote'></i> Upvote</span>
+                                      <span><i class='bx bx-downvote' ></i> Downvote</span>
+                                    </div>
+                                </div>
+                                <div class="view__con">
+                                    <div class="view">
+                                        <a href="#">View all comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                    <div class="posts">
+                        <div class="post">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-13.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Haris Ejaz</h3>
+                                        <small>Dubai, 15 minutes ago <i class="ri-earth-fill"></i></small>
+                                    </div>
+                                </div>
+                                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                            </div>
+                            <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sed. <span>#footballbanters</span></div>
+                            <div class="photo">
+                                <img src="./asssets/images/feed-1.jpg" alt="feed">
+                            </div>
+    
+                            <div class="action__buttons">
+                                <div class="interaction__buttons">
+                                    <span><p>1</p><i class="ri-heart-line"></i></span>
+                                    <span><i class="ri-discuss-line"></i></span>
+                                    <span><i class="ri-share-line"></i></span>
+    
+                                </div>
+    
+                                <div class="save">
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="attach">
+                                        <input type="text" placeholder="What's on your mind?">
+                                    <div class="comment__icons">
+                                        <span><i class="ri-camera-line"></i></span>
+                                        <span><i class="ri-image-line"></i></span>
+                                        <span><i class="ri-attachment-2"></i></i></span>
+                                        <span><i class='bx bx-smile'></i></i></span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="sort">
+                                    <div class="all"><p>All Comments</p><i class="ri-arrow-down-s-line"></i></div>
+                                    <div class="sort__by"><small class="text__muted">Sort By <strong>Most Popular</strong></div>
+                                </div>
+    
+                                <div class="commenter">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="main__comment">
+                                        <strong>Joseph Gallagher</strong><small class="text__muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit harum sapiente id, nobis necessitatibus.</small>
+                                    </div>
+                                </div>
+                                <div class="reply__con">
+                                    <div class="reply">
+                                        <i class="uil uil-corner-down-right-alt"></i>
+                                        <small>Reply Comment</small>
+                                        <span>25</span>
+                                    </div>
+                                    <div class="vote">
+                                      <span><i class='bx bx-upvote'></i> Upvote</span>
+                                      <span><i class='bx bx-downvote' ></i> Downvote</span>
+                                    </div>
+                                </div>
+                                <div class="view__con">
+                                    <div class="view">
+                                        <a href="#">View all comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+    
+                    <!----------------------- END OF POSTS --------------------->
+                </div>
+                <!------------- MIDDLE  ------------->
+        
+                <div class="middle3">
+                    <!------------- STORIES  ------------->
+                        
+                        
+                    <!------------- STORIES  ------------->
+    
+                    <div class="stories">
+                        <div class="story">
+                            <div class="profile__photo">
+                                <img src="./asssets/images/profile-17.jpg" alt="">
+                            </div>
+                            <p class="name">Your story</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile__photo">
+                                <img src="./asssets/images/profile-17.jpg" alt="">
+                            </div>
+                            <p class="name">Fabrizio Romano</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile__photo">
+                                <img src="./asssets/images/profile-17.jpg" alt="">
+                            </div>
+                            <p class="name">Gerard Romero</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile__photo">
+                                <img src="./asssets/images/profile-17.jpg" alt="">
+                            </div>
+                            <p class="name">Oh My Goal</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile__photo">
+                                <img src="./asssets/images/profile-17.jpg" alt="">
+                            </div>
+                            <p class="name">Soccer Stories</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile__photo">
+                                <img src="./asssets/images/profile-17.jpg" alt="">
+                            </div>
+                            <p class="name">Barcelona</p>
+                        </div>
+                    </div>
+                    <!------------- END OF STORIES ------------->
+                    <form action="#" class="create__post">
+                        <div class="profile__photo">
+                            <img src="./asssets/images/profile-1.jpg" alt="">
+                        </div>
+                        <div class="add">
+                            <input type="text" placeholder="What's on your mind?" id="create-post">
+                        <i class="ri-image-add-fill"></i>
+                        </div>
+                        <input type="submit" value="Post" class="btn btn__primary">
+                    </form>
+    
+                    <!----------------------- POSTS --------------------->
+                    <div class="posts">
+                        <div class="post">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-13.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Haris Ejaz</h3>
+                                        <small>Dubai, 15 minutes ago <i class="ri-earth-fill"></i></small>
+                                    </div>
+                                </div>
+                                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                            </div>
+                            <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sed. <span>#footballbanters</span></div>
+                            <div class="photo">
+                                <img src="./asssets/images/feed-1.jpg" alt="feed">
+                            </div>
+    
+                            <div class="action__buttons">
+                                <div class="interaction__buttons">
+                                    <span><p>1</p><i class="ri-heart-line"></i></span>
+                                    <span><i class="ri-discuss-line"></i></span>
+                                    <span><i class="ri-share-line"></i></span>
+    
+                                </div>
+    
+                                <div class="save">
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="attach">
+                                        <input type="text" placeholder="What's on your mind?">
+                                    <div class="comment__icons">
+                                        <span><i class="ri-camera-line"></i></span>
+                                        <span><i class="ri-image-line"></i></span>
+                                        <span><i class="ri-attachment-2"></i></i></span>
+                                        <span><i class='bx bx-smile'></i></i></span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="sort">
+                                    <div class="all"><p>All Comments</p><i class="ri-arrow-down-s-line"></i></div>
+                                    <div class="sort__by"><small class="text__muted">Sort By <strong>Most Popular</strong></div>
+                                </div>
+    
+                                <div class="commenter">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="main__comment">
+                                        <strong>Joseph Gallagher</strong><small class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit harum sapiente id, nobis necessitatibus.</small>
+                                    </div>
+                                </div>
+                                <div class="reply__con">
+                                    <div class="reply">
+                                        <i class="uil uil-corner-down-right-alt"></i>
+                                        <small>Reply Comment</small>
+                                        <span>25</span>
+                                    </div>
+                                    <div class="vote">
+                                      <span><i class='bx bx-upvote'></i> Upvote</span>
+                                      <span><i class='bx bx-downvote' ></i> Downvote</span>
+                                    </div>
+                                </div>
+                                <div class="view__con">
+                                    <div class="view">
+                                        <a href="#">View all comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                    <div class="posts">
+                        <div class="post">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-13.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Haris Ejaz</h3>
+                                        <small>Dubai, 15 minutes ago <i class="ri-earth-fill"></i></small>
+                                    </div>
+                                </div>
+                                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                            </div>
+                            <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sed. <span>#footballbanters</span></div>
+                            <div class="photo">
+                                <img src="./asssets/images/feed-1.jpg" alt="feed">
+                            </div>
+    
+                            <div class="action__buttons">
+                                <div class="interaction__buttons">
+                                    <span><p>1</p><i class="ri-heart-line"></i></span>
+                                    <span><i class="ri-discuss-line"></i></span>
+                                    <span><i class="ri-share-line"></i></span>
+    
+                                </div>
+    
+                                <div class="save">
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="attach">
+                                        <input type="text" placeholder="What's on your mind?">
+                                    <div class="comment__icons">
+                                        <span><i class="ri-camera-line"></i></span>
+                                        <span><i class="ri-image-line"></i></span>
+                                        <span><i class="ri-attachment-2"></i></i></span>
+                                        <span><i class='bx bx-smile'></i></i></span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="sort">
+                                    <div class="all"><p>All Comments</p><i class="ri-arrow-down-s-line"></i></div>
+                                    <div class="sort__by"><small class="text__muted">Sort By <strong>Most Popular</strong></div>
+                                </div>
+    
+                                <div class="commenter">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="main__comment">
+                                        <strong>Joseph Gallagher</strong><small class="text__muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit harum sapiente id, nobis necessitatibus.</small>
+                                    </div>
+                                </div>
+                                <div class="reply__con">
+                                    <div class="reply">
+                                        <i class="uil uil-corner-down-right-alt"></i>
+                                        <small>Reply Comment</small>
+                                        <span>25</span>
+                                    </div>
+                                    <div class="vote">
+                                      <span><i class='bx bx-upvote'></i> Upvote</span>
+                                      <span><i class='bx bx-downvote' ></i> Downvote</span>
+                                    </div>
+                                </div>
+                                <div class="view__con">
+                                    <div class="view">
+                                        <a href="#">View all comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                    <div class="posts">
+                        <div class="post">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-13.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Haris Ejaz</h3>
+                                        <small>Dubai, 15 minutes ago <i class="ri-earth-fill"></i></small>
+                                    </div>
+                                </div>
+                                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                            </div>
+                            <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sed. <span>#footballbanters</span></div>
+                            <div class="photo">
+                                <img src="./asssets/images/feed-1.jpg" alt="feed">
+                            </div>
+    
+                            <div class="action__buttons">
+                                <div class="interaction__buttons">
+                                    <span><p>1</p><i class="ri-heart-line"></i></span>
+                                    <span><i class="ri-discuss-line"></i></span>
+                                    <span><i class="ri-share-line"></i></span>
+    
+                                </div>
+    
+                                <div class="save">
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="attach">
+                                        <input type="text" placeholder="What's on your mind?">
+                                    <div class="comment__icons">
+                                        <span><i class="ri-camera-line"></i></span>
+                                        <span><i class="ri-image-line"></i></span>
+                                        <span><i class="ri-attachment-2"></i></i></span>
+                                        <span><i class='bx bx-smile'></i></i></span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="sort">
+                                    <div class="all"><p>All Comments</p><i class="ri-arrow-down-s-line"></i></div>
+                                    <div class="sort__by"><small class="text__muted">Sort By <strong>Most Popular</strong></div>
+                                </div>
+    
+                                <div class="commenter">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="main__comment">
+                                        <strong>Joseph Gallagher</strong><small class="text__muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit harum sapiente id, nobis necessitatibus.</small>
+                                    </div>
+                                </div>
+                                <div class="reply__con">
+                                    <div class="reply">
+                                        <i class="uil uil-corner-down-right-alt"></i>
+                                        <small>Reply Comment</small>
+                                        <span>25</span>
+                                    </div>
+                                    <div class="vote">
+                                      <span><i class='bx bx-upvote'></i> Upvote</span>
+                                      <span><i class='bx bx-downvote' ></i> Downvote</span>
+                                    </div>
+                                </div>
+                                <div class="view__con">
+                                    <div class="view">
+                                        <a href="#">View all comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                    <div class="posts">
+                        <div class="post">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-13.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Haris Ejaz</h3>
+                                        <small>Dubai, 15 minutes ago <i class="ri-earth-fill"></i></small>
+                                    </div>
+                                </div>
+                                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                            </div>
+                            <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sed. <span>#footballbanters</span></div>
+                            <div class="photo">
+                                <img src="./asssets/images/feed-1.jpg" alt="feed">
+                            </div>
+    
+                            <div class="action__buttons">
+                                <div class="interaction__buttons">
+                                    <span><p>1</p><i class="ri-heart-line"></i></span>
+                                    <span><i class="ri-discuss-line"></i></span>
+                                    <span><i class="ri-share-line"></i></span>
+    
+                                </div>
+    
+                                <div class="save">
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="attach">
+                                        <input type="text" placeholder="What's on your mind?">
+                                    <div class="comment__icons">
+                                        <span><i class="ri-camera-line"></i></span>
+                                        <span><i class="ri-image-line"></i></span>
+                                        <span><i class="ri-attachment-2"></i></i></span>
+                                        <span><i class='bx bx-smile'></i></i></span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="sort">
+                                    <div class="all"><p>All Comments</p><i class="ri-arrow-down-s-line"></i></div>
+                                    <div class="sort__by"><small class="text__muted">Sort By <strong>Most Popular</strong></div>
+                                </div>
+    
+                                <div class="commenter">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="main__comment">
+                                        <strong>Joseph Gallagher</strong><small class="text__muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit harum sapiente id, nobis necessitatibus.</small>
+                                    </div>
+                                </div>
+                                <div class="reply__con">
+                                    <div class="reply">
+                                        <i class="uil uil-corner-down-right-alt"></i>
+                                        <small>Reply Comment</small>
+                                        <span>25</span>
+                                    </div>
+                                    <div class="vote">
+                                      <span><i class='bx bx-upvote'></i> Upvote</span>
+                                      <span><i class='bx bx-downvote' ></i> Downvote</span>
+                                    </div>
+                                </div>
+                                <div class="view__con">
+                                    <div class="view">
+                                        <a href="#">View all comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                    <div class="posts">
+                        <div class="post">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-13.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Haris Ejaz</h3>
+                                        <small>Dubai, 15 minutes ago <i class="ri-earth-fill"></i></small>
+                                    </div>
+                                </div>
+                                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                            </div>
+                            <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sed. <span>#footballbanters</span></div>
+                            <div class="photo">
+                                <img src="./asssets/images/feed-1.jpg" alt="feed">
+                            </div>
+    
+                            <div class="action__buttons">
+                                <div class="interaction__buttons">
+                                    <span><p>1</p><i class="ri-heart-line"></i></span>
+                                    <span><i class="ri-discuss-line"></i></span>
+                                    <span><i class="ri-share-line"></i></span>
+    
+                                </div>
+    
+                                <div class="save">
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="attach">
+                                        <input type="text" placeholder="What's on your mind?">
+                                    <div class="comment__icons">
+                                        <span><i class="ri-camera-line"></i></span>
+                                        <span><i class="ri-image-line"></i></span>
+                                        <span><i class="ri-attachment-2"></i></i></span>
+                                        <span><i class='bx bx-smile'></i></i></span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="sort">
+                                    <div class="all"><p>All Comments</p><i class="ri-arrow-down-s-line"></i></div>
+                                    <div class="sort__by"><small class="text__muted">Sort By <strong>Most Popular</strong></div>
+                                </div>
+    
+                                <div class="commenter">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="main__comment">
+                                        <strong>Joseph Gallagher</strong><small class="text__muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit harum sapiente id, nobis necessitatibus.</small>
+                                    </div>
+                                </div>
+                                <div class="reply__con">
+                                    <div class="reply">
+                                        <i class="uil uil-corner-down-right-alt"></i>
+                                        <small>Reply Comment</small>
+                                        <span>25</span>
+                                    </div>
+                                    <div class="vote">
+                                      <span><i class='bx bx-upvote'></i> Upvote</span>
+                                      <span><i class='bx bx-downvote' ></i> Downvote</span>
+                                    </div>
+                                </div>
+                                <div class="view__con">
+                                    <div class="view">
+                                        <a href="#">View all comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                    <div class="posts">
+                        <div class="post">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-13.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Haris Ejaz</h3>
+                                        <small>Dubai, 15 minutes ago <i class="ri-earth-fill"></i></small>
+                                    </div>
+                                </div>
+                                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                            </div>
+                            <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sed. <span>#footballbanters</span></div>
+                            <div class="photo">
+                                <img src="./asssets/images/feed-1.jpg" alt="feed">
+                            </div>
+    
+                            <div class="action__buttons">
+                                <div class="interaction__buttons">
+                                    <span><p>1</p><i class="ri-heart-line"></i></span>
+                                    <span><i class="ri-discuss-line"></i></span>
+                                    <span><i class="ri-share-line"></i></span>
+    
+                                </div>
+    
+                                <div class="save">
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="attach">
+                                        <input type="text" placeholder="What's on your mind?">
+                                    <div class="comment__icons">
+                                        <span><i class="ri-camera-line"></i></span>
+                                        <span><i class="ri-image-line"></i></span>
+                                        <span><i class="ri-attachment-2"></i></i></span>
+                                        <span><i class='bx bx-smile'></i></i></span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="sort">
+                                    <div class="all"><p>All Comments</p><i class="ri-arrow-down-s-line"></i></div>
+                                    <div class="sort__by"><small class="text__muted">Sort By <strong>Most Popular</strong></div>
+                                </div>
+    
+                                <div class="commenter">
+                                    <div class="profile__photo">
+                                        <img src="./asssets/images/profile-1.jpg" alt="">
+                                    </div>
+                                    <div class="main__comment">
+                                        <strong>Joseph Gallagher</strong><small class="text__muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit harum sapiente id, nobis necessitatibus.</small>
+                                    </div>
+                                </div>
+                                <div class="reply__con">
+                                    <div class="reply">
+                                        <i class="uil uil-corner-down-right-alt"></i>
+                                        <small>Reply Comment</small>
+                                        <span>25</span>
+                                    </div>
+                                    <div class="vote">
+                                      <span><i class='bx bx-upvote'></i> Upvote</span>
+                                      <span><i class='bx bx-downvote' ></i> Downvote</span>
+                                    </div>
+                                </div>
+                                <div class="view__con">
+                                    <div class="view">
+                                        <a href="#">View all comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+    
+                    <!----------------------- END OF POSTS --------------------->
+                </div>
             </div>
+            
             <!------------- RIGHT SIDE ------------->
     
             <div class="right">
-    
+                <div class="messages">
+                    <div class="heading">
+                        <h2>Messages</h2>
+                        <i class="uil uil-edit"></i>
+                    </div>
+                    <!-- ---Search Bar ----->
+                    <div class="search__bar">
+                        <i class="uil uil-search"></i>
+                        <input type="search" placeholder="Search messages" id="message-search">
+                    </div>
+                    <!-- ---Messages Category ----->
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="messages__requests">Requests(2)</h6>
+                    </div>
+                    <!-- ---Message  ----->
+                    <div class="message">
+                        <div class="profile__photo">
+                            <img src="./asssets/images/profile-20.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message__body">
+                            <h5>Harris Ejaz</h5>
+                            <p class="text__bold">2 New Messages.</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile__photo">
+                            <img src="./asssets/images/profile-20.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message__body">
+                            <h5>Harris Ejaz</h5>
+                            <p class="text__muted">3 New Messages.</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile__photo">
+                            <img src="./asssets/images/profile-20.jpg" alt="">
+                        </div>
+                        <div class="message__body">
+                            <h5>Harris Ejaz</h5>
+                            <p class="text__muted">2 New Messages.</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile__photo">
+                            <img src="./asssets/images/profile-20.jpg" alt="">
+                        </div>
+                        <div class="message__body">
+                            <h5>Harris Ejaz</h5>
+                            <p class="text__muted">2 New Messages.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!---------- END OF MESSAGES ---------->
+
+
+                <!---------------- FRIEND REQUESTS ------------->
+                <div class="friend__requests">
+                    <h3>People You May Know</h3>
+                    <div class="request">
+                        <div class="request__info">
+                            <div class="profile__photo">
+                                <img src="./asssets/images/profile-10.jpg" alt="">
+                            </div>
+                            <div class="">
+                                <h3>Muhammad Karim</h3>
+                                <p class="text__muted">
+                                    8 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn__primary">Follow</button>
+                            <button class="btn">Remove</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="request__info">
+                            <div class="profile__photo">
+                                <img src="./asssets/images/profile-12.jpg" alt="">
+                            </div>
+                            <div class="">
+                                <h3>Mark Gabriel</h3>
+                                <p class="text__muted">
+                                    8 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn__primary">Follow</button>
+                            <button class="btn">Remove</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="request__info">
+                            <div class="profile__photo">
+                                <img src="./asssets/images/profile-11.jpg" alt="">
+                            </div>
+                            <div class="">
+                                <h3>Harris Ejaz</h3>
+                                <p class="text__muted">
+                                    8 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn__primary">Follow</button>
+                            <button class="btn">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------------- END OF RIGHT ---------------------->
+
+            <!---------------------------- THEME CUSTOMISATION ----------------------->
+
+            <div class="customize__theme">
+                <div class="card">
+                    <h2>Customize Your View</h2>
+                    <p class="text__muted">Manage your font size, color, and background. </p>
+
+                    <!---------- FONT SIZES --------->
+                    <div class="font__size">
+                        <h4>Font Size</h4>
+                        <div>
+                            <h6>Aa</h6>
+                            <div class="choose__size">
+                                <span class="font__size__1"></span>
+                                <span class="font__size__2 active"></span>
+                                <span class="font__size__3"></span>
+                                <span class="font__size__4"></span>
+                                <span class="font__size__5"></span>
+                            </div>
+                            <h3>Aa</h3>
+                        </div>
+                    </div>
+
+                    <!---------------- PRIMary COLORS -------------->
+                    <div class="color">
+                        <h4>Colors</h4>
+                        <div class="choose__color">
+                            <span class="color__1 active"></span>
+                            <span class="color__2"></span>
+                            <span class="color__3"></span>
+                            <span class="color__4"></span>
+                            <span class="color__5"></span>
+                        </div>
+                    </div>
+
+                    <!---------------- PRIMary COLORS -------------->
+
+                    <div class="background">
+                        <h4>Background</h4>
+                        <div class="choose__bg">
+                            <div class="bg__1 active">
+                                <span></span>
+                                <h5 for="bg__1">Light</h5>
+                            </div>
+                            <div class="bg__2">
+                                <span></span>
+                                <h5 for="bg__2">Dim</h5>
+                            </div>
+                            <div class="bg__3">
+                                <span></span>
+                                <h5 for="bg__3">Dark</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
      </main>-

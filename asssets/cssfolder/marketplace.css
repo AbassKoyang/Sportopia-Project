@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+  
+ 
+    
+/* ROOT VARIABLES */ /* ROOT VARIABLES */
+/* ROOT VARIABLES */ /* ROOT VARIABLES */
+
+:root{
+    --color-white:hsl(252, 30%, 100%);
+    --color-light:hsl(252, 30%, 95%);
+    --color-gray:hsl(252, 15%, 65%);
+    --color-primary:hsl(252, 75%, 60%);
+    --color-secondary:hsl(252, 100%, 17  90%);
+    --color-success:hsl(120, 95%, 65%);
+    --color-danger:hsl(0, 95%, 67%);
+    --color-dark:hsl(252, 30%, 17%);
+    --color-black:hsl(252, 30%, 10%);
+
+
+    --sticky-top-left:5.4rem;
+    --sticky-top-right:-18rem;
+
+
+
+    --border-radius:2rem;
+    --card-border-radius:1rem;
+    --btn-padding:0.6rem 2rem;
+    --search-padding:0.7rem 1rem;
+    --card-padding:1rem;
+}
+
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body{
+    font-family: 'work sans' , 'poppins';
+    color: var(--color-dark);
+    background: var(--color-light);
+    overflow-x: hidden;
+}
+
+
+/* GENERAL STYLES */ /* GENERAL STYLES */
+/* GENERAL STYLES */ /* GENERAL STYLES */
+
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.profile__photo{
+    width: 2.7rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+.btn{
+    display: inline-block;
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    padding:var(--btn-padding) ;
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 0.9rem;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn__primary{
+    background: var(--color-primary);
+    color: white;
+}
+
+.text__bold{
+    font-weight: 500;
+}
+.text__muted{
+    color: var(--color-gray);
+}
+
+
+/*=================================== NAVBAR ===================================*/
+/*=================================== NAVBAR ===================================*/
+
+nav{
+    width: 100%;
+    height: fit-content;
+    background: var(--color-white);
+    padding: 0.6rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    font-family: 'Work Sans';
+    font-weight: 700;
+    font-size: 3rem;
+    margin-left: 50px;
+    color: var(--color-primary);
+}
+
+nav .search__select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav .search__select .search__bar{
+    background: var(--color-light);
+    border-radius: var(--border-radius);
+    padding: var(--search-padding);
+}
+
+nav .search__bar input[type="search"]{
+    background: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: var(--color-dark);
+}
+
+nav .search__bar input[type="search"]::placeholder, i{
+    color: var(--color-gray);
+    font-size: 1rem;
+}
+
+/*=================================== NAVSELECT ===================================*/
+/*=================================== NAVSELECT ===================================*/
+.nav__select{
+    width: 400px;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: transparent;
+    border-radius: var(--border-radius);
+    margin-top: 0.5rem;
+}
+
+.nav__select .nav__select__con{
+    width: 25%;
+    height: 100%;
+    background: var(--color-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+.nav__select .nav__select__con:hover{
+    background: var(--color-primary);
+}
+.nav__select .nav__select__con:hover p{
+    color: var(--color-white);
+}
+
+.nav__select .nav__feeds{
+    background: var(--color-primary);
+}
+
+.nav__select p{
+    margin: 0;
+    font-size: 1.0rem;
+    font-weight: 400;
+    color: var(--color-black);
+}
+
+.nav__select .feeds{
+    color: var(--color-white);
+}
+
+
+nav .create{
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+nav .create .notmessage{
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+nav .create .notmessage .profile__photo{
+    background: var(--color-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+nav .create .notmessage .profile__photo:hover  .notmessage-icon{
+    font-size: 1.8rem;
+    rotate: 10deg;
+    transition: all 300ms ease;
+}
+nav .create .notmessage .profile__photo i{
+    color: var(--color-primary);
+    font-size: 1.5rem;
+}
