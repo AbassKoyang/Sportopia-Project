@@ -241,10 +241,10 @@ saveButton.onclick =() => {
 saveButton.addEventListener('click', savedNotificationFunction);
 
 // like post
-const likeButton = document.querySelector('.like__button')
-const like = document.querySelector('.interaction__button')
+const likeButton = document.querySelector('.like__icon')
+const like = document.querySelector('.like')
 likeButton.onclick =() => {
-    
+    like.style.display = 'block'
 }
 
 
