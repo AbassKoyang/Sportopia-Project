@@ -14,7 +14,7 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
      <!------------- CSS STYLESHEET LINK --------->
     <link rel="stylesheet" href="./asssets/cssfolder/social.css">
-    <title>NokoSocial</title>
+    <title>Welcome To Sportopia!</title>
     
 </head>
 <body>
@@ -73,8 +73,8 @@
                         <img src="./asssets/images/profile-1.jpg" alt="Profile Photo">
                     </div>
                     <div class="handle">
-                        <h4>Abass Koyang</h4>
-                        <p class="text__muted">@abassk</p>
+                        <h4 id="fullname"></h4>
+                        <p class="text__muted" id="user"></p>
                     </div>
                 </a>
     
@@ -158,40 +158,59 @@
                         <i class="uil uil-setting"></i></span><h3>Settings</h3>
                     </a>
 
-                    <div class="community__wrapper">
-                <div class="community__con">
-                    <div class="community__header">
-                        <h4>My community</h4>
-                        <small>29</small>
-                    </div>
-                    <div class="community">
-                        <div class="profile__photo">
-                            <img src="./asssets/images/profile-4.jpg" alt="">
+                    <div class="friend__requests friend__requests2">
+                        <h3>Suggested communities</h3>
+                        <div class="request">
+                            <div class="request__info">
+                                <div class="profile__photo">
+                                    <img src="./asssets/images/skysports-messi-neymar-ronaldo_5695805.png" alt="">
+                                </div>
+                                <div class="">
+                                    <h3>Football HQ</h3>
+                                    <p class="text__muted">
+                                        100k Members
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="action">
+                                <button class="btn btn__primary">Join</button>
+                                <button class="btn">Remove</button>
+                            </div>
                         </div>
-                        <div class="community__body">
-                            <b>Football HQ</b>
-                            <small class="text__muted">50k Members</small>
+                        <div class="request">
+                            <div class="request__info">
+                                <div class="profile__photo">
+                                    <img src="./asssets/images/nba.png" alt="">
+                                </div>
+                                <div class="">
+                                    <h3>NBA Family</h3>
+                                    <p class="text__muted">
+                                        120k Members
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="action">
+                                <button class="btn btn__primary">Join</button>
+                                <button class="btn">Remove</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="community">
-                        <div class="profile__photo">
-                            <img src="./asssets/images/profile-4.jpg" alt="">
+                        <div class="request">
+                            <div class="request__info">
+                                <div class="profile__photo">
+                                    <img src="./asssets/images/gerad.jpg" alt="">
+                                </div>
+                                <div class="">
+                                    <h3>Hockey Universe</h3>
+                                    <p class="text__muted">
+                                        50k Members
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="action">
+                                <button class="btn btn__primary">Join</button>
+                                <button class="btn">Remove</button>
+                            </div>
                         </div>
-                        <div class="community__body">
-                            <b>Football HQ</b>
-                            <small class="text__muted">50k Members</small>
-                        </div>
-                    </div>
-                    <div class="community">
-                        <div class="profile__photo">
-                            <img src="./asssets/images/profile-4.jpg" alt="">
-                        </div>
-                        <div class="community__body">
-                            <b>Football HQ</b>
-                            <small class="text__muted">50k Members</small>
-                        </div>
-                    </div>
-                </div>
                     </div>
                 </div>
                 <!------------- END OF SIDEBAR ------------->
@@ -276,7 +295,7 @@
                             </div>
                             <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sed. <span>#footballbanters</span></div>
                             <div class="photo">
-                                <img src="./asssets/images/feed-1.jpg" alt="feed">
+                                <img src="./asssets/images/ac-messi-miami-combo.webp" alt="feed">
                             </div>
     
                             <div class="action__buttons">
@@ -288,7 +307,12 @@
                                 </div>
     
                                 <div class="save">
-                                    <i class="ri-bookmark-line"></i>
+                                    <i class="ri-bookmark-line">
+                                        <div class="saved">
+                                            <p>Post saved successfully.</p>
+                                            <i class="ri-checkbox-circle-fill"></i>
+                                        </div>
+                                    </i>
                                 </div>
                             </div>
                             <div class="comments">
@@ -368,7 +392,12 @@
                                 </div>
     
                                 <div class="save">
-                                    <i class="ri-bookmark-line"></i>
+                                    <i class="ri-bookmark-line">
+                                        <div class="saved">
+                                            <p>Post saved successfully.</p>
+                                            <i class="ri-checkbox-circle-fill"></i>
+                                        </div>
+                                    </i>
                                 </div>
                             </div>
                             <div class="comments">
@@ -448,7 +477,12 @@
                                 </div>
     
                                 <div class="save">
-                                    <i class="ri-bookmark-line"></i>
+                                    <i class="ri-bookmark-line">
+                                        <div class="saved">
+                                            <p>Post saved successfully.</p>
+                                            <i class="ri-checkbox-circle-fill"></i>
+                                        </div>
+                                    </i>
                                 </div>
                             </div>
                             <div class="comments">
@@ -528,7 +562,12 @@
                                 </div>
     
                                 <div class="save">
-                                    <i class="ri-bookmark-line"></i>
+                                    <i class="ri-bookmark-line">
+                                        <div class="saved">
+                                            <p>Post saved successfully.</p>
+                                            <i class="ri-checkbox-circle-fill"></i>
+                                        </div>
+                                    </i>
                                 </div>
                             </div>
                             <div class="comments">
@@ -608,7 +647,12 @@
                                 </div>
     
                                 <div class="save">
-                                    <i class="ri-bookmark-line"></i>
+                                    <i class="ri-bookmark-line">
+                                        <div class="saved">
+                                            <p>Post saved successfully.</p>
+                                            <i class="ri-checkbox-circle-fill"></i>
+                                        </div>
+                                    </i>
                                 </div>
                             </div>
                             <div class="comments">
@@ -688,7 +732,12 @@
                                 </div>
     
                                 <div class="save">
-                                    <i class="ri-bookmark-line"></i>
+                                    <i class="ri-bookmark-line">
+                                        <div class="saved">
+                                            <p>Post saved successfully.</p>
+                                            <i class="ri-checkbox-circle-fill"></i>
+                                        </div>
+                                    </i>
                                 </div>
                             </div>
                             <div class="comments">
@@ -1855,36 +1904,36 @@
                             <div class="active"></div>
                         </div>
                         <div class="message__body">
-                            <h5>Mary Jane</h5>
+                            <h5>Sportopia Team</h5>
                             <p class="text__bold">2 New Messages.</p>
                         </div>
                     </div>
-                    <div class="message">
+                    <div class="message disappear1">
                         <div class="profile__photo">
-                            <img src="./asssets/images/profile-20.jpg" alt="">
+                            <img src="./asssets/images/profile-10.jpg" alt="">
                             <div class="active"></div>
                         </div>
                         <div class="message__body">
-                            <h5>Moses Johnson</h5>
-                            <p class="text__muted">3 New Messages.</p>
+                            <h5>Muhammad Khadijah</h5>
+                            <p class="text__muted">You can now message...</p>
                         </div>
                     </div>
-                    <div class="message">
+                    <div class="message disappear2">
                         <div class="profile__photo">
-                            <img src="./asssets/images/profile-20.jpg" alt="">
+                            <img src="./asssets/images/profile-12.jpg" alt="">
+                        </div>
+                        <div class="message__body">
+                            <h5>Mark Gabriella</h5>
+                            <p class="text__muted">You can now message...</p>
+                        </div>
+                    </div>
+                    <div class="message disappear3">
+                        <div class="profile__photo">
+                            <img src="./asssets/images/profile-11.jpg" alt="">
                         </div>
                         <div class="message__body">
                             <h5>Harris Ejaz</h5>
-                            <p class="text__muted">2 New Messages.</p>
-                        </div>
-                    </div>
-                    <div class="message">
-                        <div class="profile__photo">
-                            <img src="./asssets/images/profile-20.jpg" alt="">
-                        </div>
-                        <div class="message__body">
-                            <h5>Harris Ejaz</h5>
-                            <p class="text__muted">2 New Messages.</p>
+                            <p class="text__muted">You can now message...</p>
                         </div>
                     </div>
                 </div>
@@ -1901,14 +1950,14 @@
                                 <img src="./asssets/images/profile-10.jpg" alt="">
                             </div>
                             <div class="">
-                                <h3>Muhammad Karim</h3>
+                                <h3>Muhammad Khadijah</h3>
                                 <p class="text__muted">
-                                    8 mutual friends
+                                    18 mutual friends
                                 </p>
                             </div>
                         </div>
                         <div class="action">
-                            <button class="btn btn__primary">Follow</button>
+                            <button class="btn btn__primary appear1">Connect</button>
                             <button class="btn">Remove</button>
                         </div>
                     </div>
@@ -1918,14 +1967,14 @@
                                 <img src="./asssets/images/profile-12.jpg" alt="">
                             </div>
                             <div class="">
-                                <h3>Mark Gabriel</h3>
+                                <h3>Mark Gabriella</h3>
                                 <p class="text__muted">
                                     8 mutual friends
                                 </p>
                             </div>
                         </div>
                         <div class="action">
-                            <button class="btn btn__primary">Follow</button>
+                            <button class="btn btn__primary appear2">Connect</button>
                             <button class="btn">Remove</button>
                         </div>
                     </div>
@@ -1942,7 +1991,7 @@
                             </div>
                         </div>
                         <div class="action">
-                            <button class="btn btn__primary">Follow</button>
+                            <button class="btn btn__primary appear3">Connect</button>
                             <button class="btn">Remove</button>
                         </div>
                     </div>
@@ -2012,8 +2061,13 @@
     <div class="menu__control">
         <i class="ri-arrow-drop-left-line"></i>
     </div>
-     <script src="./asssets/jsfolder/social.js"></script>
     <!------------- BOOTSTRAP JS CDN LINK --------->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+      <!------------- FIREBASE CDN LINK --------->
+      <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+    <!-------------  JS FILE LINK --------->
+    <script src="./asssets/jsfolder/social.js"></script>
+    <script src="./asssets/jsfolder/signout.js"></script>
 </body>
 </html>

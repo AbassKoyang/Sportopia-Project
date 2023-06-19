@@ -43,33 +43,3 @@ console.log("error message", errorMessage);
 
 });
 
-
-
-//Signin Function
-let signInButton = document.getElementById("login");
-
-signInButton.addEventListener("click", (e) =>{
-e.preventDefault();
-console.log("signin-click")
-
-var email = document.getElementById("inputEmail") 
-var password = document.getElementById("inputPassword") 
-
-
-auth
-.signInWithEmailAndPassword(email.value, password.value)
-.then((userCredential) => {
-    location.reload();
-    // signed in
-var user = userCredential.user;
-console.log("user, user.mail");
-window.location = "social.html";
-})
-
-.catch((error) => {
-var errorCode = error.code;
-var errorMessage = error.message;
-console.log("error code", errorCode);
-console.log("error message", errorMessage);
-})
-});
