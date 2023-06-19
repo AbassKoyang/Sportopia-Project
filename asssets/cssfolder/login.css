@@ -82,7 +82,7 @@ nav{
 nav .logo{
     font-family: 'Work Sans';
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-left: 50px;
 }
 
@@ -337,7 +337,7 @@ form .additional__buttons__con a .additional__button .bxl-github{
     nav .logo{
         font-family: 'Work Sans';
         font-weight: 700;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-left: 20px;
     }
     
