@@ -34,11 +34,27 @@ const changeActiveItem = () => {
     changeActiveItem();
      item.classList.add('active');
      if(item.id != 'notifications'){
-        document.querySelector('.notifications__popup').
+        document.querySelector('.settings__popup').
         style.display = 'none';
      }
      else{
-        document.querySelector('.notifications__popup').
+        document.querySelector('.settings__popup').
+        style.display = 'block';
+        document.querySelector('.notification__count').style.display = "none";
+     }
+   })
+ })
+ 
+ menuItems.forEach(item => {
+   item.addEventListener('click', () => {
+    changeActiveItem();
+     item.classList.add('active');
+     if(item.id != 'notifications'){
+        document.querySelector('.settings__popup').
+        style.display = 'none';
+     }
+     else{
+        document.querySelector('.settings__popup').
         style.display = 'block';
         document.querySelector('.notification__count').style.display = "none";
      }
@@ -94,21 +110,29 @@ themeModal.addEventListener('click', closeThemeModal)
 // open menu
 
 const openMenu = document.querySelector('.menu__control')
+const closeMenu = document.querySelector('.menu__control2')
 const navMenu = document.querySelector('.left')
 
 openMenu.addEventListener('click', () => {
-    navMenu.style.right= '0'
-    navMenu.style.transition = 'all 300ms ease'
+    navMenu.style.right= '0';
+    navMenu.style.transition = 'all 300ms ease';
+    openMenu.style.opacity = '0';
 })
+closeMenu.addEventListener('click', () => {
+    navMenu.style.right= '-100%';
+    navMenu.style.transition = 'all 300ms ease';
+    openMenu.style.opacity = '1';
+    closeMenu.style.display = 'none'
+})
+openMenu.onclick = () =>{
+    closeMenu.style.display = 'flex';
+}
 
 
 // closes modal
-const closeNavMenu = (e) => {
-    if (e.target.classList.contains('.left')){
-        navMenu.style.right= '-100'
-    navMenu.style.transition = 'all 300ms ease'
-    }
-}
+// const closeNavMenu = document.querySelector('.mebu__control')
+// if
+   
 
 // Removes active class from unselected span
 const removeSizeSelector = () => {
@@ -194,8 +218,8 @@ colorPalette.forEach(color => {
 
 const savedNotificationFunction = () => {
         savedNotification.style.display ='flex';
-        savedNotification.style.opacity = '1'
-        savedNotification.style.top = '-4rem'
+        savedNotification.style.opacity = '1';
+        savedNotification.style.top = '-4rem';
         setTimeout(() => {
             savedNotification.style.opacity = '0.1'
             savedNotification.style.top = '-2rem'
@@ -203,6 +227,40 @@ const savedNotificationFunction = () => {
         }, 1000);
 
 }
+saveButton.onclick =() => {
+    saveButton.classList.toggle('ri-bookmark-3-fill')
+}
 
 
 saveButton.addEventListener('click', savedNotificationFunction);
+
+
+
+// accept request
+
+const disappearOne = document.querySelector('.disappear1')
+const appearOne = document.querySelector('.appear1')
+appearOne.onclick = () =>{
+    disappearOne.style.display = 'flex'
+    appearOne.innerHTML = 'Connected'
+    appearOne.style.color = 'black'
+    appearOne.style.backgroundColor = 'var(--color-light)'
+}
+const disappearTwo = document.querySelector('.disappear2')
+const appearTwo = document.querySelector('.appear2')
+appearTwo.onclick = () =>{
+    disappearTwo.style.display = 'flex'
+     appearTwo.innerHTML = 'Connected'
+    appearTwo.style.color = 'black'
+    appearTwo.style.backgroundColor = 'var(--color-light)'
+}
+const disappearThree = document.querySelector('.disappear3')
+const appearThree = document.querySelector('.appear3')
+appearThree.onclick = () =>{
+    disappearThree.style.display = 'flex'
+     appearThree.innerHTML = 'Connected'
+    appearThree.style.color = 'black'
+    appearThree.style.backgroundColor = 'var(--color-light)'
+}
+
+

@@ -39,6 +39,8 @@ var errorCode = error.code;
 var errorMessage = error.message;
 console.log("error code", errorCode);
 console.log("error message", errorMessage);
+alert("error code", errorCode);
+alert("error message", errorMessage);
 })
 
 });
