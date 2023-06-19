@@ -28,38 +28,44 @@ const changeActiveItem = () => {
         item.classList.remove('active')
     })
 }
+const changeActiveTwoItem = document.querySelector('.activetwo')
+const settingsPopup = document.querySelector('.settings__popup')
+
+ menuItems.forEach(item => {
+   item.addEventListener('click', () => {
+    changeActiveTwoItem();
+     item.classList.add('activetwo');
+     if(item.id != 'settings'){
+        document.querySelector('.settings__popup').
+        style.display = 'none';
+     }
+     else{
+        document.querySelector('.settings__popup').
+        style.display = 'block';
+        document.querySelector('.notification__count').style.display = "none";
+     }
+   })
+ })
 
  menuItems.forEach(item => {
    item.addEventListener('click', () => {
     changeActiveItem();
      item.classList.add('active');
      if(item.id != 'notifications'){
-        document.querySelector('.settings__popup').
+        document.querySelector('.notifications__popup').
         style.display = 'none';
      }
      else{
-        document.querySelector('.settings__popup').
+        document.querySelector('.notifications__popup').
         style.display = 'block';
         document.querySelector('.notification__count').style.display = "none";
      }
    })
  })
- 
- menuItems.forEach(item => {
-   item.addEventListener('click', () => {
-    changeActiveItem();
-     item.classList.add('active');
-     if(item.id != 'notifications'){
-        document.querySelector('.settings__popup').
-        style.display = 'none';
-     }
-     else{
-        document.querySelector('.settings__popup').
-        style.display = 'block';
-        document.querySelector('.notification__count').style.display = "none";
-     }
-   })
- })
+
+ changeActiveTwoItem.onclick = () =>{
+    settingsPopup.style.display = 'flex'
+ }
 
 //  messages
 // Searches Chats
@@ -234,6 +240,12 @@ saveButton.onclick =() => {
 
 saveButton.addEventListener('click', savedNotificationFunction);
 
+// like post
+const likeButton = document.querySelector('.like__button')
+const like = document.querySelector('.interaction__button')
+likeButton.onclick =() => {
+    
+}
 
 
 // accept request
@@ -264,3 +276,8 @@ appearThree.onclick = () =>{
 }
 
 
+const follow = document.querySelector('.info p')
+
+follow.onclick = () =>{
+    follow.innerHTML = 'Following'
+}
