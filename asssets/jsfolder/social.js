@@ -18,7 +18,7 @@ const colorPalette = document.querySelectorAll('.choose__color span')
 
 // save notification
 
-const saveButton = document.querySelector('.ri-bookmark-line')
+const saveButton = document.querySelectorAll('.ri-bookmark-line')
 const savedNotification = document.querySelector('.saved')
 
 //  remove active class from all menu items
@@ -221,31 +221,62 @@ colorPalette.forEach(color => {
 
 
 // save post
-
-const savedNotificationFunction = () => {
-        savedNotification.style.display ='flex';
-        savedNotification.style.opacity = '1';
-        savedNotification.style.top = '-4rem';
-        setTimeout(() => {
-            savedNotification.style.opacity = '0.1'
-            savedNotification.style.top = '-2rem'
-            savedNotification.style.display ='none';
-        }, 1000);
-
-}
 saveButton.onclick =() => {
     saveButton.classList.toggle('ri-bookmark-3-fill')
 }
 
 
-saveButton.addEventListener('click', savedNotificationFunction);
+// saveButton.addEventListener('click', savedNotificationFunction);
+
+
+saveButton.forEach(savedNotificationFunction =>{
+    savedNotificationFunction.addEventListener('click', () => {
+        savedNotification.style.display ='flex';
+        savedNotification.style.opacity = '1';
+        savedNotification.style.top = '-4rem';
+
+
+        const buttonRect = saveButton.getBoundingClientRect();
+
+            // Adjust the notification position relative to the button
+    savedNotification.style.top = (buttonRect.top + window.scrollY - 40) + '70px';
+    savedNotification.style.left = (buttonRect.left + window.scrollX) + '1000px';
+        setTimeout(() => {
+            savedNotification.style.opacity = '0.1'
+            savedNotification.style.top = '-2rem'
+            savedNotification.style.display ='none';
+        }, 1000);
+    })
+})
 
 // like post
-const likeButton = document.querySelector('.like__icon')
-const like = document.querySelector('.like')
-likeButton.onclick =() => {
-    like.style.display = 'block'
+// Get references to the button, like icon, and like count elements
+const likeButton = document.getElementById('likeButton');
+const likeIcon = document.getElementById('likeIcon');
+const likeCount = document.getElementById('likeCount');
+
+// Set an initial like count and liked state
+let count = 0;
+let liked = false;
+
+// Function to update the like count and button state
+function updateLikeStatus() {
+  if (liked) {
+    count--;
+    likeIcon.style.fill = 'black';
+  } else {
+    count++;
+    likeIcon.style.fill = 'var(--color-primary)'; // Set the fill color when liked
+    likeCount.style.display = 'block'
+  }
+
+  liked = !liked;
+  likeCount.textContent = count;
+
 }
+
+// Add event listener to handle button clicks
+likeIcon.addEventListener('click', updateLikeStatus);
 
 
 // accept request
@@ -281,3 +312,12 @@ const follow = document.querySelector('.info p')
 follow.onclick = () =>{
     follow.innerHTML = 'Following'
 }
+
+
+
+
+
+
+// comments functions
+
+// const commentBox = document.querySelector(.co)

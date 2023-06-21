@@ -626,6 +626,13 @@ main .container .left .side__bar .menu__items{
     cursor: pointer;
 }
 
+.stories .story:hover{
+    transform: scale(1.05);
+    transition: all 300ms ease;
+    box-shadow: 0 0 0.3rem var(--color-primary);
+}
+
+
  .stories .story::before{
     content: '';
     display: block;
@@ -655,19 +662,19 @@ main .container .left .side__bar .menu__items{
     background: url('../images/profile-1.jpg') no-repeat center center/cover;
 }
  .stories .story:nth-child(2){
-    background: url('../images/story-2.jpg') no-repeat center center/cover;
+    background: url('../images/ac-messi-miami-combo.webp') no-repeat center center/cover;
 }
  .stories .story:nth-child(3){
-    background: url('../images/story-3.jpg') no-repeat center center/cover;
+    background: url('../images/Jordi-Alba-Spain2.jpg') no-repeat center center/cover;
 }
  .stories .story:nth-child(4){
-    background: url('../images/story-4.jpg') no-repeat center center/cover;
+    background: url('../images/Gavi-Spain.jpg') no-repeat center center/cover;
 }
  .stories .story:nth-child(5){
-    background: url('../images/story-5.jpg') no-repeat center center/cover;
+    background: url('../images/paulo\ dybala.jpg') no-repeat center center/cover;
 }
  .stories .story:nth-child(6){
-    background: url('../images/story-6.jpg') no-repeat center center/cover;
+    background: url('../images/lewa.jpg') no-repeat center center/cover;
 }
 
 /********************* CREATE POST *****************/
@@ -728,6 +735,10 @@ main .container .left .side__bar .menu__items{
     cursor: pointer;
 }
 
+.post .head .user .profile__photo{
+    border: 3px solid var(--color-primary);
+}
+
  .posts .post .head .user{
     display: flex;
     align-items: center;
@@ -738,13 +749,19 @@ main .container .left .side__bar .menu__items{
     color: var(--color-dark);
     display: flex;
     align-items: center;
-    gap: 0.7rem;
+    gap: 0.3rem;
+}
+
+.user .info h3 i{
+    color: var(--color-primary);
+    margin: 0;
 }
 .user .info h3 p{
     color: var(--color-primary);
     font-size: 0.8rem;
     font-weight: 700;
     cursor: pointer;
+    margin-left: 0.5rem;
 }
 .user .info small{
     display: flex;
@@ -780,6 +797,10 @@ main .container .left .side__bar .menu__items{
     justify-content: space-between;
     align-items: center;
     margin: 0rem 0.6rem;
+}
+
+.post .action__buttons .interaction__buttons svg{
+    cursor: pointer;
 }
  .post .action__buttons .interaction__buttons{
     display: flex;
@@ -857,6 +878,12 @@ main .container .left .side__bar .menu__items{
  .post .comments .comment .attach .comment__icons i{
     font-size: 1rem;
     color: var(--color-gray);
+}
+
+.post .comments .comment .bxs-send{
+    font-size: 1.7rem;
+    color: var(--color-primary);
+    display: none;
 }
 
  .post .comments .sort{
@@ -1362,6 +1389,21 @@ main .container .right .messages{
     font-size: 1.5rem;
     color: var(--color-primary);
     margin: 0;
+}
+
+
+/*================ HIDDEN COMMENT ================*/
+.posts .post .comments .hidden__comment{
+    display: none;
+}
+.posts .post .comments .hidden__reply{
+    display: none;
+}
+.posts .post .comments .view__comment{
+    display: none;
+}
+.posts .post .comments .view__reply{
+    display: none;
 }
 
 /*========================== MEDIA QUERIES FOR big TABLETS AND small laptops ================================*/
