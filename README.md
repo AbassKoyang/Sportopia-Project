@@ -1,7 +1,7 @@
 # Sportopia-Project
 Sportopia is the home of sport enthusiast. An app that made just for sport enthusiasts.
 
-Buil
+Built with HTML, CSS, JavaScript and Firebase.
 
 ![Screenshot (89)](https://github.com/AbassKoyang/Sportopia-Project/assets/125982523/b271f945-3701-4f5f-affa-50b759140b07)
 ![Screenshot (93)](https://github.com/AbassKoyang/Sportopia-Project/assets/125982523/4ed9b8b2-cef5-4df3-b68d-4f18eafb28ca)
